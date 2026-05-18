@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Aquila Wohnbau GmbH – Neubau, Renovierung & Handwerk in Wien | Schlüsselfertig</title>
+  <meta name="description" content="Aquila Wohnbau GmbH: Ihr Baumeister & Handwerker in Wien und Umgebung. Neubau, Wohnung renovieren lassen, Installateur, Schlüsselfertige Häuser – alles aus einer Hand. Direkter Ansprechpartner vor Ort." />
+  <meta name="keywords" content="Neubau Wien, Renovierung Wien, Wohnung renovieren lassen Wien, Baumeister Wien, Handwerker Wien, Installateur Wien, schlüsselfertige Häuser Wien, Wohnbau Wien, Aquila Wohnbau, Umbau Wien, Sanierung Wien, Renovierung Wien Umgebung" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Aquila Wohnbau GmbH" />
+  <link rel="canonical" href="https://aquila-wohnbau.at/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aquila Wohnbau GmbH – Neubau & Renovierung Wien" />
+  <meta property="og:description" content="Ihr professioneller Partner für Neubau, Renovierungen, Wohnung verschönern, Installateur und schlüsselfertige Häuser in Wien & Umgebung." />
+  <meta property="og:url" content="https://aquila-wohnbau.at/" />
+  <meta property="og:locale" content="de_AT" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aquila Wohnbau GmbH",
+    "description": "Professionelles Bauunternehmen in Wien – Neubau, Renovierung, Sanierung, Installateur, schlüsselfertige Häuser – alles aus einer Hand.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wien",
+      "addressCountry": "AT"
+    },
+    "areaServed": ["Wien", "Niederösterreich", "Wien Umgebung"],
+    "serviceType": ["Neubau", "Renovierung", "Sanierung", "Installateur", "Schlüsselfertige Häuser", "Wohnungsrenovierung"],
+    "url": "https://aquila-wohnbau.at"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --midnight: #0d1b2a;
+      --midnight-mid: #162236;
+      --midnight-light: #1e3047;
+      --gold: #c8a96e;
+      --gold-light: #e0c48a;
+      --gold-pale: #f5eed8;
+      --white: #f8f7f4;
+      --grey: #8a95a0;
+      --grey-light: #d4d9de;
+      --body-font: 'DM Sans', sans-serif;
+      --display-font: 'Cormorant Garamond', serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--body-font);
+      background: var(--white);
+      color: var(--midnight);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAVIGATION ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 5%;
+      background: rgba(13, 27, 42, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200,169,110,0.18);
+      transition: padding 0.3s;
+    }
+    nav.scrolled { padding: 0.8rem 5%; }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 0.75rem; text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+    }
+    .nav-logo-text { color: var(--white); }
+    .nav-logo-text .brand { font-family: var(--display-font); font-size: 1.35rem; font-weight: 600; letter-spacing: 0.03em; }
+    .nav-logo-text .sub { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 300; }
+
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { color: rgba(248,247,244,0.75); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 400; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); padding: 0.6rem 1.4rem; border-radius: 4px;
+      text-decoration: none; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .burger span { display: block; width: 24px; height: 2px; background: var(--white); transition: all 0.3s; border-radius: 2px; }
+    .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none; position: fixed; top: 70px; left: 0; right: 0; bottom: 0;
+      background: var(--midnight); z-index: 999; padding: 2rem 5%;
+      flex-direction: column; gap: 0;
+      overflow-y: auto;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { color: var(--white); text-decoration: none; font-size: 1.1rem; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); letter-spacing: 0.05em; }
+    .mobile-menu a:last-child { border-bottom: none; margin-top: 1.5rem; background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--midnight); text-align: center; border-radius: 4px; padding: 1rem; font-weight: 600; }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      background: var(--midnight);
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 65% 50%, rgba(30,48,71,0.9) 0%, var(--midnight) 70%);
+    }
+    .hero-grid-lines {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image:
+        linear-gradient(var(--gold) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gold) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+    .hero-accent {
+      position: absolute; right: -80px; top: 50%; transform: translateY(-50%);
+      width: min(600px, 60vw); height: min(600px, 60vw);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,169,110,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 9rem 5% 5rem;
+      max-width: 760px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 0.8rem;
+      color: var(--gold); font-size: 0.78rem; letter-spacing: 0.22em;
+      text-transform: uppercase; font-weight: 500; margin-bottom: 1.8rem;
+      opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
+
+    .hero-title {
+      font-family: var(--display-font); font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 600; line-height: 1.08; color: var(--white);
+      margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .hero-title .accent { color: var(--gold); font-style: italic; }
+
+    .hero-desc {
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem); color: rgba(248,247,244,0.65);
+      line-height: 1.75; max-width: 520px; margin-bottom: 2.5rem; font-weight: 300;
+      opacity: 0; animation: fadeUp 0.8s 0.6s forwards;
+    }
+
+    .hero-actions {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
+    }
+    .btn-primary {
+      display: inline-block; background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); padding: 0.9rem 2.2rem; border-radius: 4px;
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      letter-spacing: 0.05em; transition: all 0.25s; border: none; cursor: pointer;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,169,110,0.35); }
+
+    .btn-secondary {
+      display: inline-block; border: 1px solid rgba(200,169,110,0.4);
+      color: var(--gold); padding: 0.9rem 2.2rem; border-radius: 4px;
+      text-decoration: none; font-weight: 400; font-size: 0.9rem;
+      letter-spacing: 0.05em; transition: all 0.25s;
+    }
+    .btn-secondary:hover { border-color: var(--gold); background: rgba(200,169,110,0.06); }
+
+    .hero-stats {
+      position: absolute; bottom: 3rem; right: 5%;
+      display: flex; gap: 3rem; z-index: 2;
+      opacity: 0; animation: fadeUp 0.8s 1s forwards;
+    }
+    .stat { text-align: center; }
+    .stat-number { font-family: var(--display-font); font-size: 2.5rem; font-weight: 600; color: var(--gold); line-height: 1; }
+    .stat-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(248,247,244,0.5); margin-top: 0.3rem; }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 6rem 5%; }
+    .section-eyebrow {
+      display: inline-flex; align-items: center; gap: 0.8rem;
+      color: var(--gold); font-size: 0.75rem; letter-spacing: 0.22em;
+      text-transform: uppercase; font-weight: 500; margin-bottom: 1rem;
+    }
+    .section-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+    .section-title {
+      font-family: var(--display-font); font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 600; line-height: 1.12; color: var(--midnight); margin-bottom: 1.2rem;
+    }
+    .section-title.light { color: var(--white); }
+    .section-desc { color: var(--grey); line-height: 1.75; max-width: 540px; font-weight: 300; }
+    .section-desc.light { color: rgba(248,247,244,0.6); }
+
+    /* ─── ABOUT ─── */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-visual {
+      position: relative; border-radius: 12px; overflow: hidden;
+      background: linear-gradient(135deg, var(--midnight-mid), var(--midnight-light));
+      aspect-ratio: 4/3;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-visual-inner {
+      width: 80%; height: 80%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 1rem;
+    }
+    .about-icon { font-size: 5rem; opacity: 0.6; }
+    .about-visual-badge {
+      position: absolute; bottom: -1px; right: -1px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); padding: 1.2rem 1.5rem;
+      border-radius: 12px 0 12px 0; text-align: center;
+    }
+    .about-visual-badge .num { font-family: var(--display-font); font-size: 2rem; font-weight: 700; line-height: 1; }
+    .about-visual-badge .txt { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+
+    .about-features { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 2rem; }
+    .about-feature {
+      display: flex; gap: 1rem; align-items: flex-start;
+      padding: 1rem 1.2rem; background: var(--gold-pale);
+      border-radius: 8px; border-left: 3px solid var(--gold);
+    }
+    .about-feature-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .about-feature h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.2rem; color: var(--midnight); }
+    .about-feature p { font-size: 0.82rem; color: var(--grey); line-height: 1.5; }
+
+    /* ─── SERVICES ─── */
+    #leistungen { background: linear-gradient(160deg, var(--midnight) 0%, var(--midnight-mid) 100%); }
+    .services-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 2rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .service-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(200,169,110,0.12);
+      border-radius: 12px; padding: 2rem 1.8rem;
+      transition: all 0.35s; cursor: default; position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(200,169,110,0.07) 0%, transparent 60%);
+      opacity: 0; transition: opacity 0.35s;
+    }
+    .service-card:hover { border-color: rgba(200,169,110,0.4); transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+    .service-card:hover::before { opacity: 1; }
+
+    .service-icon { font-size: 2.2rem; margin-bottom: 1.2rem; }
+    .service-title { font-family: var(--display-font); font-size: 1.4rem; font-weight: 600; color: var(--white); margin-bottom: 0.6rem; }
+    .service-desc { font-size: 0.85rem; color: rgba(248,247,244,0.55); line-height: 1.65; font-weight: 300; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.2rem; }
+    .service-tag { font-size: 0.7rem; padding: 0.25rem 0.6rem; border-radius: 100px; background: rgba(200,169,110,0.1); color: var(--gold); letter-spacing: 0.06em; }
+
+    /* ─── PROCESS ─── */
+    #ablauf { background: var(--white); }
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 4rem; }
+    .process-step { text-align: center; padding: 2rem 1rem; }
+    .process-num {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); font-family: var(--display-font); font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+    }
+    .process-step h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .process-step p { font-size: 0.83rem; color: var(--grey); line-height: 1.6; }
+    .process-connector { display: flex; align-items: center; justify-content: center; padding-top: 1.8rem; }
+    .process-arrow { color: var(--gold); font-size: 1.5rem; }
+
+    /* ─── WHY US ─── */
+    #vorteile { background: var(--gold-pale); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+    .why-items { display: flex; flex-direction: column; gap: 1.5rem; }
+    .why-item { display: flex; gap: 1.2rem; align-items: flex-start; }
+    .why-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 0.45rem; }
+    .why-item h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .why-item p { font-size: 0.85rem; color: var(--grey); line-height: 1.6; }
+
+    .why-card {
+      background: var(--midnight); border-radius: 16px; padding: 3rem;
+      color: var(--white); position: relative; overflow: hidden;
+    }
+    .why-card::after {
+      content: ''; position: absolute; bottom: -40px; right: -40px;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,169,110,0.15), transparent 70%);
+    }
+    .why-card .big-icon { font-size: 4rem; margin-bottom: 1.5rem; }
+    .why-card h3 { font-family: var(--display-font); font-size: 1.9rem; font-weight: 600; margin-bottom: 1rem; color: var(--gold); }
+    .why-card p { font-size: 0.9rem; line-height: 1.75; color: rgba(248,247,244,0.65); font-weight: 300; }
+
+    /* ─── TESTIMONIALS ─── */
+    #referenzen { background: var(--midnight-mid); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .review-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(200,169,110,0.1);
+      border-radius: 12px; padding: 1.8rem;
+    }
+    .review-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+    .review-text { font-size: 0.88rem; color: rgba(248,247,244,0.7); line-height: 1.7; font-weight: 300; margin-bottom: 1.2rem; font-style: italic; }
+    .review-author { display: flex; align-items: center; gap: 0.8rem; }
+    .review-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+    }
+    .review-name { font-size: 0.85rem; font-weight: 600; color: var(--white); }
+    .review-loc { font-size: 0.75rem; color: var(--grey); }
+
+    /* ─── CTA BANNER ─── */
+    #anfrage {
+      background: linear-gradient(135deg, var(--midnight) 0%, var(--midnight-light) 100%);
+      text-align: center; padding: 6rem 5%;
+      position: relative; overflow: hidden;
+    }
+    #anfrage::before {
+      content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+    }
+    #anfrage .section-title { margin: 0.5rem auto 1rem; }
+    #anfrage .section-desc { margin: 0 auto 2.5rem; color: rgba(248,247,244,0.55); }
+    .cta-form {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      max-width: 600px; margin: 0 auto;
+    }
+    .cta-input {
+      flex: 1 1 220px; padding: 0.9rem 1.2rem;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(200,169,110,0.2);
+      border-radius: 4px; color: var(--white); font-family: var(--body-font); font-size: 0.9rem;
+      outline: none; transition: border-color 0.2s;
+    }
+    .cta-input::placeholder { color: rgba(248,247,244,0.35); }
+    .cta-input:focus { border-color: var(--gold); }
+
+    /* ─── CONTACT ─── */
+    #kontakt { background: var(--white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; }
+    .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+    .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .contact-item-icon {
+      width: 48px; height: 48px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .contact-item h4 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey); margin-bottom: 0.3rem; }
+    .contact-item p, .contact-item a { font-size: 1rem; font-weight: 500; color: var(--midnight); text-decoration: none; }
+    .contact-item a:hover { color: var(--gold); }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grey); font-weight: 500; }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 0.85rem 1rem; border: 1px solid var(--grey-light);
+      border-radius: 6px; font-family: var(--body-font); font-size: 0.9rem;
+      color: var(--midnight); outline: none; transition: border-color 0.2s;
+      background: var(--white);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit { align-self: flex-start; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--midnight); color: rgba(248,247,244,0.55);
+      padding: 4rem 5% 2rem;
+    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand .brand-name { font-family: var(--display-font); font-size: 1.6rem; color: var(--white); margin-bottom: 0.3rem; }
+    .footer-brand .brand-sub { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .footer-brand p { font-size: 0.83rem; line-height: 1.7; max-width: 280px; }
+    .footer-col h4 { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 1.2rem; font-weight: 600; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul li a { color: rgba(248,247,244,0.55); text-decoration: none; font-size: 0.84rem; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: gap;
+      font-size: 0.78rem; gap: 1rem; flex-wrap: wrap;
+    }
+    .footer-bottom a { color: rgba(248,247,244,0.45); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--gold); }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── FLOATING CTA ─── */
+    .float-cta {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 900;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--midnight); padding: 0.85rem 1.5rem;
+      border-radius: 100px; font-weight: 700; font-size: 0.82rem;
+      text-decoration: none; box-shadow: 0 8px 30px rgba(200,169,110,0.45);
+      letter-spacing: 0.04em; transition: transform 0.2s, box-shadow 0.2s;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .float-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(200,169,110,0.55); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .burger { display: flex; }
+      .hero-stats { position: static; margin-top: 3rem; justify-content: flex-start; }
+      .hero-content { padding: 7rem 5% 3rem; }
+      .about-grid, .contact-grid, .why-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .services-header { flex-direction: column; align-items: flex-start; }
+      section { padding: 4rem 5%; }
+    }
+
+    @media (max-width: 480px) {
+      .process-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions a { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" aria-label="Aquila Wohnbau GmbH">
+    <div class="nav-logo-icon">🦅</div>
+    <div class="nav-logo-text">
+      <div class="brand">Aquila Wohnbau</div>
+      <div class="sub">GmbH · Wien</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#ablauf">Ablauf</a></li>
+    <li><a href="#vorteile">Über uns</a></li>
+    <li><a href="#referenzen">Referenzen</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a href="#kontakt" class="nav-cta">Anfrage stellen</a>
+  <div class="burger" id="burger" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#leistungen" onclick="closeMobile()">Leistungen</a>
+  <a href="#ablauf" onclick="closeMobile()">Ablauf</a>
+  <a href="#vorteile" onclick="closeMobile()">Über uns</a>
+  <a href="#referenzen" onclick="closeMobile()">Referenzen</a>
+  <a href="#kontakt" onclick="closeMobile()">Kontakt</a>
+  <a href="#kontakt" onclick="closeMobile()">Kostenlose Anfrage →</a>
+</div>
+
+<!-- Hero -->
+<section id="hero" aria-label="Aquila Wohnbau – Ihr Baupartner in Wien">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Ihr Baumeister in Wien &amp; Umgebung</div>
+    <h1 class="hero-title">
+      Wohnraum der<br><span class="accent">Perfektion</span><br>verpflichtet
+    </h1>
+    <p class="hero-desc">
+      Aquila Wohnbau GmbH steht für erstklassigen Neubau, professionelle Renovierungen und maßgeschneiderte Handwerkslösungen – alles aus einer Hand. Ihr direkter Ansprechpartner vor Ort in Wien.
+    </p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn-primary">Kostenlose Beratung</a>
+      <a href="#leistungen" class="btn-secondary">Unsere Leistungen</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Jahre Erfahrung</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">300+</div>
+        <div class="stat-label">Projekte in Wien</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Kundenzufriedenheit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="ueber-uns" aria-label="Über Aquila Wohnbau GmbH">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-visual-inner">
+        <div class="about-icon">🏗️</div>
+        <div style="color:rgba(248,247,244,0.3);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;">Aquila Wohnbau GmbH</div>
+      </div>
+      <div class="about-visual-badge">
+        <div class="num">A+</div>
+        <div class="txt">Qualität</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="section-eyebrow">Über uns</div>
+      <h2 class="section-title">Professionell. Verlässlich. Vor Ort.</h2>
+      <p class="section-desc" style="margin-bottom:2rem;">
+        Aquila Wohnbau GmbH ist Ihr kompetenter Partner für alle Bau- und Handwerksleistungen in Wien und Umgebung. Wir verbinden meisterliches Handwerk mit moderner Bauplanung – von der ersten Idee bis zur schlüsselfertigen Übergabe.
+      </p>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="about-feature-icon">🦅</div>
+          <div>
+            <h4>Ein Ansprechpartner für alles</h4>
+            <p>Kein Koordinationsaufwand für Sie – wir managen alle Gewerke aus einer Hand und halten Sie jederzeit informiert.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">📍</div>
+          <div>
+            <h4>Direkt vor Ort in Wien</h4>
+            <p>Als lokales Unternehmen kennen wir die Wiener Bauvorschriften und reagieren schnell und zuverlässig auf Ihre Anliegen.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">✅</div>
+          <div>
+            <h4>Fixpreisgarantie &amp; Transparenz</h4>
+            <p>Klare Angebote, keine versteckten Kosten. Sie wissen von Anfang an, was Ihr Projekt kostet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="leistungen" aria-label="Leistungen Aquila Wohnbau">
+  <div class="services-header">
+    <div>
+      <div class="section-eyebrow">Unsere Leistungen</div>
+      <h2 class="section-title light">Alles aus einer Hand –<br>für Ihr Zuhause</h2>
+    </div>
+    <p class="section-desc light">Von Neubau bis Wohnungsverschönerung: Aquila Wohnbau deckt alle Bereiche rund ums Bauen und Wohnen ab – professionell und termingerecht.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">🏠</div>
+      <h3 class="service-title">Neubau &amp; Schlüsselfertig</h3>
+      <p class="service-desc">Wir planen und errichten Ihr neues Zuhause von Grund auf – schlüsselfertig und nach Ihren Wünschen. Ihr Traumhaus in Wien und Umgebung.</p>
+      <div class="service-tags">
+        <span class="service-tag">Neubau Wien</span>
+        <span class="service-tag">Schlüsselfertig</span>
+        <span class="service-tag">Planung</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🔨</div>
+      <h3 class="service-title">Renovierung &amp; Sanierung</h3>
+      <p class="service-desc">Wohnung renovieren lassen in Wien – wir modernisieren Altbauten, sanieren Fassaden und bringen Ihren Wohnraum auf höchstes Niveau.</p>
+      <div class="service-tags">
+        <span class="service-tag">Renovierung Wien</span>
+        <span class="service-tag">Sanierung</span>
+        <span class="service-tag">Altbau</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🚿</div>
+      <h3 class="service-title">Installateur &amp; Sanitär</h3>
+      <p class="service-desc">Heizung, Sanitär, Elektro – unsere Installateure sorgen für modernste Haustechnik. Kompetent, sauber und termingerecht.</p>
+      <div class="service-tags">
+        <span class="service-tag">Installateur Wien</span>
+        <span class="service-tag">Heizung</span>
+        <span class="service-tag">Sanitär</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🪟</div>
+      <h3 class="service-title">Umbau &amp; Ausbau</h3>
+      <p class="service-desc">Raumaufteilung ändern, Dachausbau, Keller ausbauen – wir realisieren Ihren Umbau mit handwerklicher Präzision und minimalem Aufwand für Sie.</p>
+      <div class="service-tags">
+        <span class="service-tag">Umbau Wien</span>
+        <span class="service-tag">Dachausbau</span>
+        <span class="service-tag">Keller</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🎨</div>
+      <h3 class="service-title">Wohnung verschönern</h3>
+      <p class="service-desc">Sie möchten Ihre Wohnung verschönern? Malerarbeiten, Bodenbeläge, neue Küche oder Bad – wir setzen Ihre Ideen stilvoll um.</p>
+      <div class="service-tags">
+        <span class="service-tag">Wohnung verschönern</span>
+        <span class="service-tag">Maler</span>
+        <span class="service-tag">Boden</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🏗️</div>
+      <h3 class="service-title">Baumeister &amp; Bauleitung</h3>
+      <p class="service-desc">Als konzessionierter Baumeister in Wien übernehmen wir die gesamte Bauleitung, Planung und Einreichung bei Behörden für Sie.</p>
+      <div class="service-tags">
+        <span class="service-tag">Baumeister Wien</span>
+        <span class="service-tag">Bauleitung</span>
+        <span class="service-tag">Behörden</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="ablauf" aria-label="Ablauf Aquila Wohnbau">
+  <div style="text-align:center;max-width:600px;margin:0 auto;">
+    <div class="section-eyebrow" style="justify-content:center;">Unser Ablauf</div>
+    <h2 class="section-title">So einfach funktioniert es</h2>
+    <p class="section-desc" style="margin:0 auto;">Von der Erstberatung bis zur Übergabe – wir machen den Bauprozess stressfrei und transparent für Sie.</p>
+  </div>
+  <div class="process-grid reveal">
+    <div class="process-step">
+      <div class="process-num">1</div>
+      <h3>Kostenlose Beratung</h3>
+      <p>Wir besprechen Ihr Projekt, Ihre Wünsche und Ihr Budget – unverbindlich und vor Ort in Wien.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">2</div>
+      <h3>Fixpreisangebot</h3>
+      <p>Sie erhalten ein transparentes Angebot ohne versteckte Kosten. Fixpreis bedeutet: kein Preisschock am Ende.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">3</div>
+      <h3>Professionelle Umsetzung</h3>
+      <p>Unser erfahrenes Team übernimmt alle Gewerke – koordiniert, pünktlich und mit höchstem Qualitätsanspruch.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">4</div>
+      <h3>Schlüsselfertige Übergabe</h3>
+      <p>Wir übergeben Ihr Projekt fertig und besenrein – Sie ziehen einfach ein und genießen Ihr neues Zuhause.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section id="vorteile" aria-label="Vorteile Aquila Wohnbau Wien">
+  <div class="why-grid">
+    <div class="reveal">
+      <div class="section-eyebrow">Warum Aquila</div>
+      <h2 class="section-title">Ihr Vorteil –<br>unser Anspruch</h2>
+      <div class="why-items" style="margin-top:2rem;">
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Lokale Expertise in Wien &amp; Umgebung</h4>
+            <p>Wir kennen die Wiener Bauordnung, lokale Behörden und die spezifischen Anforderungen des österreichischen Wohnbaus.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Meisterbetrieb mit Qualitätsgarantie</h4>
+            <p>Alle Arbeiten werden von qualifizierten Fachleuten ausgeführt. Wir stehen mit unserem Namen für jedes Projekt.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Terminzuverlässigkeit</h4>
+            <p>Vereinbarte Fertigstellungstermine sind für uns verbindlich. Keine Überraschungen, keine Verzögerungen.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Persönliche Betreuung</h4>
+            <p>Ein fixer Ansprechpartner begleitet Sie durch das gesamte Projekt – von der Planung bis zur Übergabe.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div>
+            <h4>Alles aus einer Hand</h4>
+            <p>Kein Koordinieren mehrerer Firmen: Baumeister, Installateur, Maler, Elektriker – wir organisieren alles für Sie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-card reveal">
+      <div class="big-icon">🏅</div>
+      <h3>Ihr Vertrauen ist unser Fundament</h3>
+      <p>
+        Als Wiener Wohnbauunternehmen sind wir seit Jahren der verlässliche Partner für Familien, Investoren und Eigentümer. Jedes Projekt – ob große Sanierung oder kleine Wohnungsverschönerung – bearbeiten wir mit demselben Engagement und derselben Sorgfalt.
+        <br><br>
+        Unser Ziel: Sie sollen sich in Ihrem neuen Zuhause rundum wohlfühlen. Und das beginnt mit einem Partner, dem Sie vertrauen können.
+      </p>
+      <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(200,169,110,0.2);display:flex;gap:2rem;">
+        <div>
+          <div style="font-family:var(--display-font);font-size:2rem;color:var(--gold);font-weight:600;">Wien</div>
+          <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(248,247,244,0.4);">& Umgebung</div>
+        </div>
+        <div>
+          <div style="font-family:var(--display-font);font-size:2rem;color:var(--gold);font-weight:600;">★ 5.0</div>
+          <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(248,247,244,0.4);">Kundenbewertung</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Referenzen / Reviews -->
+<section id="referenzen" aria-label="Kundenbewertungen Aquila Wohnbau">
+  <div class="section-eyebrow">Referenzen</div>
+  <h2 class="section-title light">Das sagen unsere Kunden</h2>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Aquila Wohnbau hat unsere Altbauwohnung in Wien vollständig renoviert. Vom ersten Gespräch bis zur Übergabe war alles top organisiert. Absolut empfehlenswert!"</p>
+      <div class="review-author">
+        <div class="review-avatar">MK</div>
+        <div>
+          <div class="review-name">Maria K.</div>
+          <div class="review-loc">Wien 1090, Wohnungsrenovierung</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Schlüsselfertige Übergabe wie versprochen. Kein einziger Termin wurde verschoben, die Qualität ist hervorragend. Mein Einfamilienhaus ist genau das, was ich mir gewünscht habe."</p>
+      <div class="review-author">
+        <div class="review-avatar">TR</div>
+        <div>
+          <div class="review-name">Thomas R.</div>
+          <div class="review-loc">Wien Umgebung, Neubau</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">„Endlich ein Handwerker, der alles aus einer Hand anbietet! Installateur, Maler, Bodenleger – Aquila hat alles perfekt koordiniert. Ich wurde jederzeit informiert."</p>
+      <div class="review-author">
+        <div class="review-avatar">SE</div>
+        <div>
+          <div class="review-name">Sandra E.</div>
+          <div class="review-loc">Wien 1180, Badsanierung</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section id="anfrage" aria-label="Anfrage Aquila Wohnbau">
+  <div style="position:relative;z-index:1;">
+    <div class="section-eyebrow" style="justify-content:center;">Kostenlos &amp; unverbindlich</div>
+    <h2 class="section-title light" style="text-align:center;">Starten Sie Ihr Projekt heute</h2>
+    <p class="section-desc light" style="text-align:center;">Hinterlassen Sie Ihre Telefonnummer oder schreiben Sie uns – wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+    <div class="cta-form">
+      <input class="cta-input" type="tel" placeholder="Ihre Telefonnummer" aria-label="Telefonnummer" />
+      <a href="#kontakt" class="btn-primary" style="white-space:nowrap;">Jetzt anfragen</a>
+    </div>
+    <p style="color:rgba(248,247,244,0.3);font-size:0.75rem;margin-top:1rem;text-align:center;">Kostenlose Beratung · Kein Risiko · Direkter Rückruf</p>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" aria-label="Kontakt Aquila Wohnbau GmbH Wien">
+  <div style="margin-bottom:3rem;">
+    <div class="section-eyebrow">Kontakt</div>
+    <h2 class="section-title">Sprechen wir über Ihr Projekt</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        <div>
+          <h4>Standort</h4>
+          <p>Wien &amp; Umgebung<br>Niederösterreich</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">📞</div>
+        <div>
+          <h4>Telefon</h4>
+          <a href="tel:+43000000000">+43 (0) 00 000 00 00</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">✉️</div>
+        <div>
+          <h4>E-Mail</h4>
+          <a href="mailto:office@aquila-wohnbau.at">office@aquila-wohnbau.at</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">🕐</div>
+        <div>
+          <h4>Erreichbarkeit</h4>
+          <p>Mo–Fr: 8:00 – 18:00 Uhr<br>Sa: 9:00 – 13:00 Uhr</p>
+        </div>
+      </div>
+      <div style="padding:1.5rem;background:var(--gold-pale);border-radius:10px;border-left:3px solid var(--gold);">
+        <p style="font-size:0.85rem;color:var(--midnight);line-height:1.6;"><strong>Kostenlose Erstberatung:</strong><br>Wir kommen zu Ihnen nach Wien oder Umgebung – ganz ohne Verpflichtung besprechen wir Ihr Vorhaben direkt vor Ort.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Vorname</label>
+            <input type="text" id="fname" placeholder="Max" />
+          </div>
+          <div class="form-group">
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" placeholder="Mustermann" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" placeholder="+43 ..." />
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" placeholder="max@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Gewünschte Leistung</label>
+          <select id="service">
+            <option value="">Bitte wählen...</option>
+            <option>Neubau / Schlüsselfertig</option>
+            <option>Wohnung renovieren lassen</option>
+            <option>Sanierung / Umbau</option>
+            <option>Installateur / Sanitär</option>
+            <option>Wohnung verschönern</option>
+            <option>Bauleitung / Baumeister</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Ihr Anliegen</label>
+          <textarea id="message" placeholder="Beschreiben Sie kurz Ihr Projekt – Lage in Wien, Umfang, Zeitraum..."></textarea>
+        </div>
+        <button class="btn-primary form-submit" onclick="handleSubmit(event)">Anfrage kostenfrei absenden →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name">Aquila Wohnbau</div>
+      <div class="brand-sub">GmbH · Wien</div>
+      <p>Ihr professioneller Baupartner in Wien und Umgebung. Neubau, Renovierung, Installateur und Handwerk – alles aus einer Hand mit direktem Ansprechpartner vor Ort.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Leistungen</h4>
+      <ul>
+        <li><a href="#leistungen">Neubau &amp; Schlüsselfertig</a></li>
+        <li><a href="#leistungen">Renovierung Wien</a></li>
+        <li><a href="#leistungen">Wohnung renovieren</a></li>
+        <li><a href="#leistungen">Installateur Wien</a></li>
+        <li><a href="#leistungen">Baumeister</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Unternehmen</h4>
+      <ul>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#ablauf">Unser Ablauf</a></li>
+        <li><a href="#vorteile">Unsere Vorteile</a></li>
+        <li><a href="#referenzen">Referenzen</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">AGB</a></li>
+      </ul>
+      <div style="margin-top:1.5rem;">
+        <p style="font-size:0.78rem;margin-bottom:0.4rem;">Servicegebiet</p>
+        <p style="font-size:0.82rem;color:rgba(248,247,244,0.7);">Wien · Niederösterreich<br>Wien Umgebung</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Aquila Wohnbau GmbH – Ihr Baumeister in Wien. Alle Rechte vorbehalten.</p>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<a href="tel:+43000000000" class="float-cta" aria-label="Aquila Wohnbau anrufen">
+  📞 Jetzt anrufen
+</a>
+
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Mobile menu
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  function closeMobile() {
+    burger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target;
+    btn.textContent = '✓ Nachricht gesendet!';
+    btn.style.background = 'linear-gradient(135deg,#4caf50,#66bb6a)';
+    setTimeout(() => {
+      btn.textContent = 'Anfrage kostenfrei absenden →';
+      btn.style.background = '';
+    }, 3500);
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
